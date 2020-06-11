@@ -1,0 +1,252 @@
+Player 0 :| CX || C9 || DX || C8 || H9 || D8 || CJ || HK |Bet : 102
+Trump : H
+
+Player 1 :Skip
+
+Player 2 :Skip
+
+Player 3 :Skip
+
+Player 0
+C8
+
+
+0 |C8|
+Player 1
+CK
+
+
+0 |C8|
+1 |CK|
+Player 2
+C7
+
+
+0 |C8|
+1 |CK|
+2 |C7|
+Player 3
+C1
+
+
+0 |C8|
+1 |CK|
+2 |C7|
+3 |C1|
+Player 3
+D1
+
+
+0 |D1|
+Player 0
+DX
+
+
+0 |D1|
+1 |DX|
+Player 1
+DK
+
+
+0 |D1|
+1 |DX|
+2 |DK|
+Player 2
+DQ
+
+
+0 |D1|
+1 |DX|
+2 |DK|
+3 |DQ|
+Player 3
+HX
+
+
+0 |HX|
+Player 0
+H9
+
+
+0 |HX|
+1 |H9|
+Player 1
+HJ
+
+
+0 |HX|
+1 |H9|
+2 |HJ|
+Player 2
+H8
+
+
+0 |HX|
+1 |H9|
+2 |HJ|
+3 |H8|
+Player 1
+SX
+
+
+0 |SX|
+Player 2
+S1
+
+
+0 |SX|
+1 |S1|
+Player 3
+S7
+
+
+0 |SX|
+1 |S1|
+2 |S7|
+Player 0
+HK
+
+Belote
+
+0 |SX|
+1 |S1|
+2 |S7|
+3 |HK|
+Player 0
+D8
+
+
+0 |D8|
+Player 1
+DJ
+
+
+0 |D8|
+1 |DJ|
+Player 2
+H1
+
+
+0 |D8|
+1 |DJ|
+2 |H1|
+Player 3
+D7
+
+
+0 |D8|
+1 |DJ|
+2 |H1|
+3 |D7|
+Player 2
+SK
+
+
+0 |SK|
+Player 3
+SJ
+
+
+0 |SK|
+1 |SJ|
+Player 0
+C9
+
+
+0 |SK|
+1 |SJ|
+2 |C9|
+Player 1
+S9
+
+
+0 |SK|
+1 |SJ|
+2 |C9|
+3 |S9|
+Player 2
+HQ
+
+Belote
+
+0 |HQ|
+Player 3
+H7
+
+
+0 |HQ|
+1 |H7|
+Player 0
+CX
+
+
+0 |HQ|
+1 |H7|
+2 |CX|
+Player 1
+D9
+
+
+0 |HQ|
+1 |H7|
+2 |CX|
+3 |D9|
+Player 2
+SQ
+
+
+0 |SQ|
+Player 3
+CQ
+
+
+0 |SQ|
+1 |CQ|
+Player 0
+CJ
+
+
+0 |SQ|
+1 |CQ|
+2 |CJ|
+Player 1
+S8
+
+
+0 |SQ|
+1 |CQ|
+2 |CJ|
+3 |S8|
+
+Trick results:
+Team1 : 10,
+ Team2 : 226
+ended round 1
+Player 1 :Bet : 122
+Trump : H
+
+Player 2 :Skip
+
+Player 3 :Skip
+
+Player 0 :| S1 || H9 || S8 || SQ || SK || H7 || S7 || H8 |Skip
+
+Player 1
+CX
+
+
+0 |CX|
+Player 2
+C1
+
+
+0 |CX|
+1 |C1|
+Player 3
+H7
+
+
+0 |CX|
+1 |C1|
+2 |H7|
+Player 0
