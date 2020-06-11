@@ -1,0 +1,377 @@
+# depslib dependency file v1.0
+1591545461 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\game.c
+	<stdio.h>
+	"game.h"
+	"gameAI.h"
+	"variableManagement.h"
+	"graphic/graphicGame.h"
+	"graphic/graphicPasses.h"
+
+1591545461 d:\documents\utbm\matières\ife\project\c project\belotte_project\game.h
+	"variableManagement.h"
+
+1590834970 d:\documents\utbm\matières\ife\project\c project\belotte_project\variablemanagement.h
+	"graphic/sprite.h"
+
+1590837912 d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\sprite.h
+	"SDL/SDL.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1326114587 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_platform.h
+
+1326114594 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_config_win32.h
+	"SDL_platform.h"
+
+1326114600 d:\codeblocks\sdl-1.2.15\include\sdl\begin_code.h
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\close_code.h
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_keysym.h
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1590569038 d:\documents\utbm\matières\ife\project\c project\belotte_project\gameai.h
+	"variableManagement.h"
+	"game.h"
+
+1590952370 d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\graphicgame.h
+
+1590951445 d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\graphicpasses.h
+	"sprite.h"
+	"../variableManagement.h"
+	<SDL/SDL_ttf.h>
+	"../game.h"
+
+1325796794 d:\codeblocks\sdl-1.2.15\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1590954809 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\gameai.c
+	<string.h>
+	"variableManagement.h"
+	"game.h"
+	"gameAI.h"
+	<stdio.h>
+
+1590954948 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\basicfunc.c
+	<stdio.h>
+	<stdlib.h>
+	"basicFunc.h"
+
+1590954399 d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\basicfunc.h
+	<SDL/SDL_ttf.h>
+	<SDL/SDL.h>
+	"sprite.h"
+	"../variableManagement.h"
+
+1590954959 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\button.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	"button.h"
+	"sprite.h"
+
+1590848876 d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\button.h
+	"sprite.h"
+
+1591543504 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\graphicgame.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	"basicFunc.h"
+	"../variableManagement.h"
+	"graphicGame.h"
+	"button.h"
+
+1591543499 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\graphic\graphicpasses.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_ttf.h>
+	"basicFunc.h"
+	"graphicPasses.h"
+	"button.h"
+	"../game.h"
+	"graphicGame.h"
+
+1591913386 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\main.c
+	"include/game.h"
+	"include/variableManagement.h"
+	<stdlib.h>
+	<stdio.h>
+	"include/game.h"
+
+1590954841 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\variablemanagement.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"variableManagement.h"
+	"graphic/sprite.h"
+	"graphic/basicFunc.h"
+	"SDL/SDL.h"
+
+1591908102 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\basicfunc.c
+	<stdio.h>
+	<stdlib.h>
+	"../include/basicFunc.h"
+
+1591908102 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\basicfunc.h
+	<SDL/SDL_ttf.h>
+	<SDL/SDL.h>
+	"../include/sprite.h"
+	"../include/../include/variableManagement.h"
+
+1591910858 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\sprite.h
+	"../include/SDL/SDL.h"
+
+1591908102 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\variablemanagement.h
+	"../include/../include/sprite.h"
+
+1591908102 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\game.h
+	"../include/variableManagement.h"
+
+1591908102 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\button.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	"../include/../include/button.h"
+	"../include/sprite.h"
+
+1591908102 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\button.h
+	"../include/sprite.h"
+
+1591908138 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\game.c
+	<stdio.h>
+	"../include/game.h"
+	"../include/gameAI.h"
+	"../include/variableManagement.h"
+	"../include/graphicGame.h"
+	"../include/graphicPasses.h"
+
+1591908102 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\gameai.h
+	"../include/variableManagement.h"
+	"../include/game.h"
+
+1590952370 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\graphicgame.h
+
+1591908148 d:\documents\utbm\matières\ife\project\c project\belotte_project\include\graphicpasses.h
+	"../include/sprite.h"
+	"../include/variableManagement.h"
+	<SDL/SDL_ttf.h>
+	"../include/game.h"
+
+1591908102 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\gameai.c
+	<string.h>
+	"../include/variableManagement.h"
+	"../include/game.h"
+	"../include/gameAI.h"
+	<stdio.h>
+
+1591910836 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\graphicgame.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	"../include/basicFunc.h"
+	"../include/variableManagement.h"
+	"../include/graphicGame.h"
+	"../include/button.h"
+
+1591910810 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\graphicpasses.c
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_ttf.h>
+	"../include/basicFunc.h"
+	"../include/graphicPasses.h"
+	"../include/button.h"
+	"../include/game.h"
+	"../include/graphicGame.h"
+
+1591908511 source:d:\documents\utbm\matières\ife\project\c project\belotte_project\src\variablemanagement.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"../include/variableManagement.h"
+	"../include/sprite.h"
+	"../include/basicFunc.h"
+	<SDL/SDL.h>
+
