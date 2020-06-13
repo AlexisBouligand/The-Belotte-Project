@@ -229,7 +229,7 @@ char startPasses(Card_t * deck_of_32_cards, Card_t all_player_and_AI_cards[4][8]
 
       if (player_and_AI[i].bet > 0) //returned 0 means player has skipped
       {
-        if(max_bet < 152)
+        if(max_bet < 162)
         {
           printf("Bet : %i\n", player_and_AI[i].bet);
         } else {
@@ -249,7 +249,7 @@ char startPasses(Card_t * deck_of_32_cards, Card_t all_player_and_AI_cards[4][8]
 
         printf("Trump : %c\n", round_trump);
 
-        if(max_bet == 152) return round_trump; //If bet is the maximum the loop is not necessary anymore
+        if(max_bet == 162) return round_trump; //If bet is the maximum the loop is not necessary anymore
         skip_counter = 0; //reset the counter if someone bet
         has_someone_bet = 1;
 
@@ -418,7 +418,7 @@ void points_end_round(Player_t players[], int points_teams[])
         }
       }
 
-      else if (players[(i+1)%2].points + players[(i+1)%2+2].points >= bet) //(i+1)%2 => the other team
+      else if (players[(i+1)%2].points + players[(i+1)%2+2].points + players[(i+1)%2].xdder * 10 + players[(i+1)%2+2].xdder * 10 >= bet) //(i+1)%2 => the other team
         {
           points_teams[players[i].id%2] += players[i].points + players[i+2].points;
         }
@@ -428,9 +428,9 @@ void points_end_round(Player_t players[], int points_teams[])
         }
 
 
-      if (players[i].points + players[i+2].points==152 && i == team_bet_id && bet == 152)
+      if (players[i].points + players[i+2].points + players[i].xdder * 10 + players[i+2].xdder * 10 == 162 && i == team_bet_id && bet == 162)
       {
-        points_teams[players[i].id%2] += players[i].xdder * 100 + players[i+2].xdder * 100;
+        points_teams[players[i].id%2] += 100;
       }
       else
       {

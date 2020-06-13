@@ -43,7 +43,7 @@ int getBet(int *max)
 
   do
   {
-    printf("\n\nWrite your bet (min : 82, bigger than the last one, 10 by 10, max : 152).\nElse S to skip.\n");
+    printf("\n\nWrite your bet (min : 82, max : 152, step : 10, capot : 252).\nElse S to skip.\n");
 
     fgets(input, 10, stdin); //gets the input in char form
 
@@ -59,6 +59,10 @@ int getBet(int *max)
     if ((value - 2) % 10 == 0 && value >= 82 && value > *max && value <= 152)
     {
       *max = value;
+    }
+    else if(value == 252)
+    {
+      *max = 162;
     }
     else
     {
