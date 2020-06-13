@@ -11,6 +11,6 @@ gcc -L lib -I include main.c src/game/*.c src/menu/*.c src/graphics/*.c src/grap
 To compile within Code:Blocks you need to include SDL and TTF to your Code:Blocks.
 
 
-Controles:
+Controls:
 [mouse] to navigate menus and select cards to play
 [Space] to go to the next step of the game.

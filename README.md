@@ -12,7 +12,7 @@ You  can use the file compile.bat to compile with gcc or execute the command :
 To compile within Code:Blocks you need to include SDL and TTF to your Code:Blocks.
 
 
-## Controles:
+## Controls:
 **[mouse]** to navigate menus and select cards to play
 **[Space]** to go to the next step of the game.
 
