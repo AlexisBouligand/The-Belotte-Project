@@ -13,4 +13,4 @@ To compile within Code:Blocks, you need to include SDL and TTF to your Code:Bloc
 
 ## Controles:
 **[mouse]** to navigate menus and select cards to play
-**[Space]** to go to the next step of the game.
+**[Space]** to end the trick
