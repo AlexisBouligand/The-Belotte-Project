@@ -38,8 +38,6 @@ int getButtonsEvent(SDL_Surface *screen, Array_of_buttons_t *buttons, SDL_Event 
   return -1; //-1 means that we stay in the actual section
 }
 
-//getStartEvents(SDL_Surface *screen, Array_of_buttons_t *buttons, SDL_Event event);
-
 
 int main(int argc, char *argv[])
 {

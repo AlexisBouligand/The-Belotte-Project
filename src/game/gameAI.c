@@ -1,9 +1,9 @@
 #include <string.h>
+#include <stdio.h>
 #include "game/variableManagement.h"
 #include "game/game.h"
 #include "game/gameAI.h"
 
-#include <stdio.h>
 
 int getAIBet(Player_t *AI, Card_t *hand, int *max_bet)
 {
