@@ -3,14 +3,27 @@
 
 #include "game/variableManagement.h"
 
+
+/*Structure that contains player and AI properties.
+
+  Properties description:
+  - id : id of the player / AI.
+         player / AIs with even ids are in the first team and odd ids in the other
+  - bet : player's / AI's bet during passes
+  - points : points accumulated during the round
+  - belote : value that determines if the player / AI has done a belote / rebelote
+             belote = 1 corresponds to a belote
+             belote = 2 corresponds to a rebelote
+  - xdder : boolean used to check if the player / AI has done a dix de der
+  - trump : the trump chosen by the player / AI during the passes*/
 typedef struct {
   //Player : 0, IA1 : 1, IA with the player : 2, IA3: 3
   int id;
   int bet;
-  int points; //accumulated points in a round
-  int belote; //max = 2, 1 : belote, 2 : rebelote
-  int xdder; //dix de der
-  char trump; //trump card chosen by the player
+  int points;
+  int belote;
+  int xdder;
+  char trump;
 } Player_t;
 
 //Loop for the rounds, counts the points scored by each teams and stop the game when
