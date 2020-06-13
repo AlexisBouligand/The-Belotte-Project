@@ -5,9 +5,10 @@ Resolution used : 1600*900
 
 
 How to launch:
-You can double click on the Coinch.exe file that we compiled in the program before hand.
-You  can use the file compile.bat to compile with gcc.
-To compile within Code:Blocks, you need to include SDL and TTF to your Code:Blocks.
+You  can use the file compile.bat to compile with gcc or execute the command :
+gcc -L lib -I include main.c src/game/*.c src/menu/*.c src/graphics/*.c src/graphics/menu/*.c src/graphics/game/*.c -o Coinche.exe -lmingw32 -lSDLmain -lSDL -lSDL_ttf
+
+To compile within Code:Blocks you need to include SDL and TTF to your Code:Blocks.
 
 
 Controles:
