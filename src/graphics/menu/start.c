@@ -58,6 +58,10 @@ int getButtonAndKeysEvent(SDL_Surface *screen, Array_of_buttons_t *buttons, SDL_
     toggle_font = 0;
   }
 
+  if(name[cursor] == '\n') { //used when we start another game without exiting.
+    name[cursor] = '_';
+  }
+
   switch(event.type)
   {
     case SDL_QUIT: //if we click on the cross
