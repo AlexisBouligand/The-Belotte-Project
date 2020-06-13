@@ -17,3 +17,4 @@ To compile within Code:Blocks, you need to include SDL and TTF to your Code:Bloc
 
 ## Abreviations:
 D for Diamonds, C for Clubs, S for Spades,H for Heart
+AI1:Your teammate
