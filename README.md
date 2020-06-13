@@ -1,6 +1,6 @@
 # The Belotte Project
 Project realized by Alexis Bouligand, Louis Giacinti and Oscar Dewasmes during their studies at the university of technology of Belfort Montbeliard. Semester P2020, as part of the IFE UV.
-========
+****
 
 Resolution used : 1600*900
 
