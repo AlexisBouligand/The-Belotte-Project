@@ -8,9 +8,9 @@ int startGame(Sprite_t *button, int *iargs, char *cargs)
 {
   if (cargs[*iargs] == '_')
   {
-    cargs[*iargs] = '\0'; //remvoing _ from the end of the name
+    cargs[*iargs] = '\n'; //remvoing _ from the end of the name
   }
-  printf("C'est partit %s\n", cargs);
+  printf("Your name is %s", cargs);
   return 5; //exiting the menu
 }
 

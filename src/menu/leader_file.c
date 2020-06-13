@@ -137,6 +137,7 @@ void write2Leaderboard(char player_name[])
         }
         score[j] = '\0';
 
+        printf("string : %s fin", score);
         newscore = atoi(score);
         newscore++;
         sprintf(score, "%d", newscore);
@@ -167,7 +168,6 @@ void write2Leaderboard(char player_name[])
   if (player_found==0)
   {
     fputs(player_name,fp);
-    fputs("\n",fp);
     fputs("1\n",fp);
   }
   fputs("|\n",fp);
