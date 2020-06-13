@@ -397,7 +397,8 @@ void points_end_round(Player_t players[], int points_teams[])
 {
   int bet = 0;
   int team_bet_id;
-  for (int i = 0; i < 4; i++)
+  int i;
+  for (i = 0; i < 4; i++)
   {
     if(players[i].bet > bet)
     {
@@ -406,7 +407,7 @@ void points_end_round(Player_t players[], int points_teams[])
     }
   }
 
-  for (int i=0; i<2; i++)
+  for (i=0; i<2; i++)
   {
       if (i==team_bet_id)
       {
