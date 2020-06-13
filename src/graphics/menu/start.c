@@ -4,11 +4,18 @@
 #include "graphics/menu/mainmenu.h"
 #include "graphics/SDLCheck.h"
 
+/*Function that return 5 (it means start the game loop)
+  and change the player name to be usable for leaderboard writing
+
+  Arguments description:
+  - button : the button clicked (unused but necessary because of function pointer)
+  - iargs : value containing the last character of the name
+  - cargs : pointer to the name*/
 int startGame(Sprite_t *button, int *iargs, char *cargs)
 {
   if (cargs[*iargs] == '_')
   {
-    cargs[*iargs] = '\n'; //remvoing _ from the end of the name
+    cargs[*iargs] = '\n'; //removing _ from the end of the name
   }
   printf("Your name is %s", cargs);
   return 5; //exiting the menu

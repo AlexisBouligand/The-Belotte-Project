@@ -8,6 +8,12 @@ int returnToMenu(Sprite_t *button, int *iargs, char *cargs)
   return 0;
 }
 
+/*Function that return the number corresponding of the button's section
+
+  Arguments description:
+  - button : the clicked button (unused but necessary because of the function pointer)
+  - iargs : number of the section
+  - cargs : unused*/
 int getSection(Sprite_t *button, int *iargs, char *cargs)
 {
   return *iargs; //section position in init_functions and loop_functions

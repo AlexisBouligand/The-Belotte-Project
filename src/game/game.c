@@ -135,7 +135,15 @@ int canPlayCard(Card_t first_card, int first_id, Card_t player_card, int player_
 }
 
 
+/*Function that get the winner of the current trick
 
+  Arguments description:
+  - player_and_AI : array containing each player / AI
+  - table_cards : array containing the cards played during the trick
+  - trump : trump of the current round
+  - trick_number : the number of the trick (used for the dix de der)
+
+  This function return an int correponding to the index int the player_and_AI array of the winner*/
 int getWinner(Player_t * player_and_AI, Card_t * table_cards, char trump, int trick_number)
 {
   int are_trump = 0; //is there are trump cards on the table

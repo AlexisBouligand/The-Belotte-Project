@@ -55,6 +55,21 @@ char startPasses(Card_t all_player_and_AI_cards[4][8], Player_t * player_and_AI,
   - background : screen's background*/
 void startRound(Player_t * player_and_AI, Card_t all_player_and_AI_cards[4][8], char trump, SDL_Surface *screen, SDL_Surface *background);
 
+/*Function that checks if the selected card can be played during a trick
+
+  Arguments description:
+  - first_card : the first card placed one the table
+  - first_id : the id of the first player that have played
+  - player_card : the card selected
+  - player_id : the ID of the player / AI who choosed the card
+  - player_hand : array containing player's hand
+  - hand_length : the length of the player_hand array
+  - max_card_value : the value of the best trump card actually on the table
+  - trump : the trump of the round
+
+  This function returns a boolean if the player can player the selected card or not*/
+int canPlayCard(Card_t first_card, int first_id, Card_t player_card, int player_id, Card_t * player_hand, int hand_length, int max_card_value, char trump)
+
 
 /*Function that shift the array containing player and AIs and sets the corresponding index first
 
@@ -67,7 +82,7 @@ void changePlayerOrder(Player_t * player_and_AI, int index); //move all players 
 
   Arguments description:
   - player_and_AI : array containg each player and AI*/
-void initializePlayers(Player_t * player_and_AI); //variables for every player to 0
+void initializePlayers(Player_t * player_and_AI);
 
 //Called at the end of each round, adds up players points in to teams points.
 //Respect contracts rules, capot, dix de der, belotte, rebelotte
