@@ -214,7 +214,7 @@ void changePlayerOrder(Player_t * player_and_AI, int index) //index of the playe
 
 
 
-char startPasses(Card_t * deck_of_32_cards, Card_t all_player_and_AI_cards[4][8], Player_t * player_and_AI, SDL_Surface *screen, SDL_Surface *background)
+char startPasses(Card_t all_player_and_AI_cards[4][8], Player_t * player_and_AI, SDL_Surface *screen, SDL_Surface *background)
 {
   char round_trump;
   int has_someone_bet = 0; //if someone bet
