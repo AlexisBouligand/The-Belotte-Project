@@ -44,7 +44,6 @@ int graphicGetBet(int *max, Card_t *player_hand, Player_t *player_and_AI, SDL_Su
 
 
 
-
     while(looping)
     {
         //We check if the player click on the mouse
@@ -52,27 +51,17 @@ int graphicGetBet(int *max, Card_t *player_hand, Player_t *player_and_AI, SDL_Su
         switch(buttonPressed(buttons, 4))
         {
             case 0:
-
-                if(value>82 && value>*max+10 &&value!=252)
+                if(value>82 && value>*max+10)
                 {
                     value-=10;
 
                 }
-                else if(value == 252)
-                {
-                    value = 162;
-                }
-
             break;
 
             case 1:
-                if(value<162)
+                if(value<152)
                 {
                     value += 10;
-                }
-                else
-                {
-                    value = 252; //capot
                 }
             break;
 
