@@ -22,9 +22,11 @@ void displayAfterPlayerChoice(Card_t player_hand[8], Card_t table_cards[4], SDL_
 
 //Displays the teams scores
 //To be called at the end of each round
+//Quits when the user hits the space key
 void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int score2);
 
 //Displays the game over screen
+//Quits to the main menu when the user hits the space key
 void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win);
 
 
