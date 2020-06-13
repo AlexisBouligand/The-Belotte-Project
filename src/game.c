@@ -427,7 +427,7 @@ void points_end_round(Player_t players[], int points_teams[])
         }
 
 
-      if (players[i].points + players[i+2].points==152 && i == team_bet_id)
+      if (players[i].points + players[i+2].points==152 && i == team_bet_id && bet == 152)
       {
         points_teams[players[i].id%2] += players[i].xdder * 100 + players[i+2].xdder * 100;
       }
