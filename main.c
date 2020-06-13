@@ -13,7 +13,16 @@
 //compiling options for atom
 //-L lib -I include src/game/*.c src/menu/*.c src/graphics/*.c src/graphics/menu/*.c src/graphics/game/*.c -lmingw32 -lSDLmain -lSDL -lSDL_ttf
 
-int getButtonsEvent(SDL_Surface *screen, Array_of_buttons_t *buttons, SDL_Event event, char *cargs) //function that checks if user has clicked on a button and execute it's function
+/*Function that checks if we clicked on a button of a given array of buttons
+
+  Arguments description:
+  - screen : the screen that will show the graphical game
+  - buttons : dynamic array of buttons that contains each button of a section
+  - event : SDL_Event used to get mouse input
+  - cargs : unused here, but needed for function pointers
+
+  This function return an integer corresponding to a section of the menu (start, leaderboard, credits, main menu)*/
+int getButtonsEvent(SDL_Surface *screen, Array_of_buttons_t *buttons, SDL_Event event, char *cargs)
 {
   int i;
   if(event.type == SDL_MOUSEBUTTONDOWN ) //mouse clicked

@@ -4,8 +4,23 @@
 #include <SDL/SDL.h>
 #include "graphics/button.h"
 
-int returnToMenu(Sprite_t *button, int *iargs, char *cargs); //function that return section's number corresponding to the menu
 
-void initMenu(SDL_Surface *screen, Array_of_buttons_t *buttons); //function that initialize the main menu section
+/*Function used to return to the mainmenu section
+  This function is a function executed when we click a button.
+
+  It's arguments are needed to be compatible with the function pointer of Sprite_t
+  but are unused here.
+
+  This function returns 0, value corresponding to the Main menu section*/
+int returnToMenu(Sprite_t *button, int *iargs, char *cargs);
+
+
+/*Function that initialize the Main menu section of the menu.
+  It creates buttons, sprites and text needed for this section.
+
+  Arguments description:
+  - screen : the screen that will show the graphical game
+  - buttons : dynamic array of buttons that will contain buttons of this section*/
+void initMenu(SDL_Surface *screen, Array_of_buttons_t *buttons);
 
 #endif
