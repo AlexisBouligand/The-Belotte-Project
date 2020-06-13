@@ -3,8 +3,11 @@
 #include <SDL/SDL.h>
 #include "game/variableManagement.h"
 
+///All the following function ask for the screen surface and/or the background///
+
 //Need all the player and AI cards
 //The base of the graphical window
+//The base of the graphical galme window where the player choose his cards
 //Return the chosen card of the player
 Card_t graphicPlayerCardChoice(Card_t player_hand[8], Card_t table_cards[4], SDL_Surface *screen, SDL_Surface *background);
 
@@ -20,11 +23,14 @@ void graphicDisplayTableCards(Card_t table_cards[4], SDL_Surface *screen);
 //Display them after the player turn. Else, the player cannot see what the AI play after his/her turn
 void displayAfterPlayerChoice(Card_t player_hand[8], Card_t table_cards[4], SDL_Surface *screen, SDL_Surface *background);
 
+//Need the team scores
 //Displays the teams scores
 //To be called at the end of each round
 //Quits when the user hits the space key
+//Have to be called at the end of each round
 void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int score2);
 
+//Need a boolean to know who won the game
 //Displays the game over screen
 //Quits to the main menu when the user hits the space key
 void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win);
