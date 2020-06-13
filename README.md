@@ -14,3 +14,6 @@ To compile within Code:Blocks, you need to include SDL and TTF to your Code:Bloc
 ## Controles:
 **[mouse]** to navigate menus and select cards to play
 **[Space]** to end the trick
+
+## Abreviations:
+D for Diamonds, C for Clubs, S for Spades,H for Heart
