@@ -40,7 +40,7 @@ int gameLoop(SDL_Surface *screen, SDL_Surface *background, char *player_name)
 
     changePlayerOrder( player_and_AI, number_of_round); //to set the first player
 
-    trump = startPasses(deck_of_32_cards, all_player_and_AI_cards, player_and_AI, screen, background);
+    trump = startPasses(all_player_and_AI_cards, player_and_AI, screen, background);
 
     printf("\nEnd of passes\n");
 
