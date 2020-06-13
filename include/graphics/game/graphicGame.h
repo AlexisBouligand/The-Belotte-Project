@@ -6,7 +6,7 @@
 ///All the following function ask for the screen surface and/or the background///
 
 //Need all the player and AI cards
-//The base of the graphical galme window where the player choose his cards
+//The base of the graphical game window where the player choose his cards
 //Return the chosen card of the player
 Card_t graphicPlayerCardChoice(Card_t player_hand[8], Card_t table_cards[4], SDL_Surface *screen, SDL_Surface *background);
 
