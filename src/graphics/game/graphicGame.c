@@ -325,7 +325,7 @@ void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win)
   TTF_CloseFont(font);
 }
 
-void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t players[])
+void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t players[], char trump)
 {
   TTF_Font *font = NULL;
   font = TTF_OpenFont("assets/font/Minecraft.ttf", 60);
@@ -370,25 +370,30 @@ void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t 
     sprintf(txt_bet, "The other team placed a %d bet", bet);
   }
 
-  switch(players[team_bet_id].trump)
+  switch(trump)
   {
     case 'D'  :
       sprintf(txt_trump, "This round is played with Diamond trump");
-
+      break;
     case 'C'  :
       sprintf(txt_trump, "This round is played with Club trump");
-
+      break;
     case 'H'  :
       sprintf(txt_trump, "This round is played with Heart trump");
-
+      break;
     case 'S'  :
       sprintf(txt_trump, "This round is played with Spade trump");
-
+      break;
     case 'N'  :
       sprintf(txt_trump, "This round is played with No trump");
 
+      break;
     case 'A'  :
       sprintf(txt_trump, "This round is played with All trump");
+      break;
+    default :
+      sprintf(txt_trump, "txt defaut ca ve dire ca marche pa");
+
  }
 
   //Render the txts on the sprites
