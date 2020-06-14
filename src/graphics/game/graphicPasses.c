@@ -145,38 +145,13 @@ char graphicGetTrump(SDL_Surface *screen, SDL_Surface *background)
 
     while(looping)
     {
-        //We check if the player click on the mouse
-        switch(buttonPressed(buttons, 6))
-        {
-            case 0:
-                trump = 'S';
-                looping = 0;
-            break;
+      char *possibilities = "SCDHNA";
 
-            case 1:
-                trump = 'C';
-                looping = 0;
-            break;
+      //We check if the player click on the mouse
+      trump = possibilities[buttonPressed(buttons, 6)];
 
-            case 2:
-                trump = 'D';
-                looping = 0;
-            break;
-
-            case 3:
-                trump = 'H';
-                looping = 0;
-            break;
-             case 4:
-                trump = 'N';
-                looping = 0;
-            break;
-             case 5:
-                trump = 'A';
-                looping = 0;
-            break;
-        }
-
+      //trump = -1 means that no possibilities has been selected
+      if(trump != 0) looping = 0;
 
         //We make all the Blit
         SDL_BlitSurface(background, NULL, screen, NULL);
