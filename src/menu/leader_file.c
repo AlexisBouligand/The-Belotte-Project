@@ -5,11 +5,12 @@
 #include <string.h>
 #include "menu/leader_file.h"
 
-void leaderboard(char best_players[3][30])
+void leaderboard(char best_players[3][30], int *best_players_number)
 {
   FILE *fp;
   char current[21];
   int nb_lines=0;
+  *best_players_number = 0;
   fp = fopen("Leaderboard.txt", "r");
 
   //Count the number of lines in the file
@@ -76,6 +77,7 @@ void leaderboard(char best_players[3][30])
         if(best_players[i][j] == '\n') best_players[i][j] = ' ';
         j++;
       }
+      (*best_players_number)++;
 
     }
   }
