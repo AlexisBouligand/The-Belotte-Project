@@ -392,7 +392,7 @@ void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t 
       sprintf(txt_trump, "This round is played with All trump");
       break;
     default :
-      sprintf(txt_trump, "txt defaut ca ve dire ca marche pa");
+      sprintf(txt_trump, "Error : Trump not found");
       sprintf(txt_trump, "error:Trump not available");
 
  }
