@@ -8,9 +8,8 @@ Resolution used : 1600*900
 ## How to launch:
 You  can use the file compile.bat to compile with gcc or execute the command :
 `gcc -L lib -I include main.c src/game/*.c src/menu/*.c src/graphics/*.c src/graphics/menu/*.c src/graphics/game/*.c -o Coinche.exe -lmingw32 -lSDLmain -lSDL -lSDL_ttf `
-You can use the .exe if the previous solutions does not work.
+If it doesn't work you can use the .exe
 To compile within Code:Blocks you need to include SDL and TTF to your Code:Blocks.
-The project is also available here : https://github.com/AlexisBouligand/The-Belotte-Project
 
 
 ## Controls:
