@@ -393,6 +393,7 @@ void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t 
       break;
     default :
       sprintf(txt_trump, "txt defaut ca ve dire ca marche pa");
+      sprintf(txt_trump, "error:Trump not available");
 
  }
 
