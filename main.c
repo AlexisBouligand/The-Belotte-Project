@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
   int exit_loop = -1; //variable to check if we exit the event loop (-1 means no)
   char player_name[20] = "_"; //variable that will contain player's name
 
-  freopen("CON", "w", stdout); //stdout int the console and not stdout.txt
+  freopen("CON", "w", stdout); //stdout in the console and not stdout.txt
   freopen("CON", "w", stderr); //same than stdout
 
   //array containing function pointers for each section initialization.
@@ -70,6 +70,7 @@ int main(int argc, char *argv[])
 
   SDL_Surface *screen = SDL_SetVideoMode(1600, 900, 32, SDL_HWSURFACE | SDL_DOUBLEBUF); //Creating the screen
   checkError(screen);
+
   SDL_Surface *background = SDL_LoadBMP("assets/sprite/Background.bmp"); //creating the background
   checkError(background);
   SDL_Rect background_position = {.x = 0, .y = 0}; //background's position
@@ -100,7 +101,7 @@ int main(int argc, char *argv[])
 
     } while(exit_loop < 0);
 
-    section = exit_loop;
+    section = exit_loop; //updating the section
 
     freeButtonSurface(buttons.b, buttons.length); //removing each button from SDL memory
 
@@ -109,7 +110,7 @@ int main(int argc, char *argv[])
     if(section == 5) //section 5 means to start the game loop
     {
       gameLoop(screen, background, player_name);
-      section = 0;
+      section = 0; //going back to the menu after the game is finished
     }
   }
 
