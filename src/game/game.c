@@ -42,6 +42,8 @@ int gameLoop(SDL_Surface *screen, SDL_Surface *background, char *player_name)
 
     trump = startPasses(all_player_and_AI_cards, player_and_AI, screen, background);
 
+    displayPassesResult(screen, background, player_and_AI);
+
     printf("\nEnd of passes\n");
 
     startRound(player_and_AI, all_player_and_AI_cards, trump, screen, background);

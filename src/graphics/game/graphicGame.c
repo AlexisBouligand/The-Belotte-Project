@@ -5,6 +5,7 @@
 #include "game/variableManagement.h"
 #include "graphics/game/graphicGame.h"
 #include "graphics/button.h"
+#include "game/game.h"
 
 
 Card_t graphicPlayerCardChoice(Card_t  player_hand[8], Card_t table_cards[4], SDL_Surface *screen, SDL_Surface *background)
@@ -171,6 +172,18 @@ void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int
   Sprite_t txt_space;
   txt_space.rect.x = 220;
   txt_space.rect.y = 450;
+  Sprite_t spr_title;
+  spr_title.rect.x = 220;
+  spr_title.rect.y = 10;
+  Sprite_t spr_score1;
+  spr_score1.rect.x = 220;
+  spr_score1.rect.y = 250;
+  Sprite_t spr_score2;
+  spr_score2.rect.x = 220;
+  spr_score2.rect.y = 350;
+  Sprite_t spr_space;
+  spr_space.rect.x = 220;
+  spr_space.rect.y = 450;
 
   char title[25]="Teams points";
   char txt1[19];
@@ -183,6 +196,10 @@ void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int
   txt_score1.bmp = TTF_RenderText_Solid(font, txt1, lightBrown);
   txt_score2.bmp = TTF_RenderText_Solid(font, txt2, lightBrown);
   txt_space.bmp = TTF_RenderText_Solid(font, space, lightBrown);
+  spr_title.bmp = TTF_RenderText_Solid(font, title, lightBrown);
+  spr_score1.bmp = TTF_RenderText_Solid(font, txt1, lightBrown);
+  spr_score2.bmp = TTF_RenderText_Solid(font, txt2, lightBrown);
+  spr_space.bmp = TTF_RenderText_Solid(font, space, lightBrown);
 
   //We Blit
   SDL_BlitSurface(background,NULL,screen,NULL);
@@ -190,6 +207,10 @@ void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int
   SDL_BlitSurface(txt_score1.bmp,NULL,screen, &txt_score1.rect);
   SDL_BlitSurface(txt_score2.bmp,NULL,screen, &txt_score2.rect);
   SDL_BlitSurface(txt_space.bmp,NULL,screen, &txt_space.rect);
+  SDL_BlitSurface(spr_title.bmp,NULL,screen, &spr_title.rect);
+  SDL_BlitSurface(spr_score1.bmp,NULL,screen, &spr_score1.rect);
+  SDL_BlitSurface(spr_score2.bmp,NULL,screen, &spr_score2.rect);
+  SDL_BlitSurface(spr_space.bmp,NULL,screen, &spr_space.rect);
 
   SDL_Flip(screen);
 
@@ -208,9 +229,15 @@ void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int
   SDL_FreeSurface(txt_score1.bmp);
   SDL_FreeSurface(txt_score2.bmp);
   SDL_FreeSurface(txt_space.bmp);
+  SDL_FreeSurface(spr_title.bmp);
+  SDL_FreeSurface(spr_score1.bmp);
+  SDL_FreeSurface(spr_score2.bmp);
+  SDL_FreeSurface(spr_space.bmp);
   TTF_CloseFont(font);
 
 }
+
+
 
 void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win)
 {
@@ -229,6 +256,15 @@ void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win)
   Sprite_t txt_space;
   txt_space.rect.x = 220;
   txt_space.rect.y = 450;
+  Sprite_t spr_title;
+  spr_title.rect.x = 220;
+  spr_title.rect.y = 10;
+  Sprite_t spr_result;
+  spr_result.rect.x = 220;
+  spr_result.rect.y = 250;
+  Sprite_t spr_space;
+  spr_space.rect.x = 220;
+  spr_space.rect.y = 450;
 
   char title[25]="Game Over";
   char result[19];
@@ -244,12 +280,18 @@ void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win)
   }
   txt_title.bmp = TTF_RenderText_Solid(font, title, lightBrown);
   checkError(txt_title.bmp);
+  spr_title.bmp = TTF_RenderText_Solid(font, title, lightBrown);
+  checkError(spr_title.bmp);
 
   txt_result.bmp = TTF_RenderText_Solid(font, result, lightBrown);
   checkError(txt_result.bmp);
+  spr_result.bmp = TTF_RenderText_Solid(font, result, lightBrown);
+  checkError(spr_result.bmp);
 
   txt_space.bmp = TTF_RenderText_Solid(font, space, lightBrown);
   checkError(txt_space.bmp);
+  spr_space.bmp = TTF_RenderText_Solid(font, space, lightBrown);
+  checkError(spr_space.bmp);
 
 
   //We Blit
@@ -257,6 +299,9 @@ void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win)
   SDL_BlitSurface(txt_title.bmp,NULL,screen, &txt_title.rect);
   SDL_BlitSurface(txt_result.bmp,NULL,screen, &txt_result.rect);
   SDL_BlitSurface(txt_space.bmp,NULL,screen, &txt_space.rect);
+  SDL_BlitSurface(spr_title.bmp,NULL,screen, &spr_title.rect);
+  SDL_BlitSurface(spr_result.bmp,NULL,screen, &spr_result.rect);
+  SDL_BlitSurface(spr_space.bmp,NULL,screen, &spr_space.rect);
 
   SDL_Flip(screen);
 
@@ -274,5 +319,110 @@ void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win)
   SDL_FreeSurface(txt_title.bmp);
   SDL_FreeSurface(txt_result.bmp);
   SDL_FreeSurface(txt_space.bmp);
+  SDL_FreeSurface(spr_title.bmp);
+  SDL_FreeSurface(spr_result.bmp);
+  SDL_FreeSurface(spr_space.bmp);
+  TTF_CloseFont(font);
+}
+
+void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t players[])
+{
+  TTF_Font *font = NULL;
+  font = TTF_OpenFont("assets/font/Minecraft.ttf", 60);
+  checkFont(font);
+  SDL_Color lightBrown = {99,92,92};
+
+  //The sprites displayed
+  Sprite_t spr_bet;
+  spr_bet.rect.x = 220;
+  spr_bet.rect.y = 200;
+  Sprite_t spr_trump;
+  spr_trump.rect.x = 220;
+  spr_trump.rect.y = 275;
+  Sprite_t spr_space;
+  spr_space.rect.x = 220;
+  spr_space.rect.y = 450;
+
+  //the texts displayed on the sprites
+  char txt_bet[35];
+  char txt_trump[45];
+  char txt_space[25]="Press space to continue";
+
+  //logic to know what to display
+  int bet = 0;
+  int team_bet_id;
+  int i;
+  for (i = 0; i < 4; i++)
+  {
+    if(players[i].bet > bet)
+    {
+      bet = players[i].bet;
+      team_bet_id = i % 2;
+    }
+  }
+
+  if (team_bet_id==0)//user's team placed the bet
+  {
+    sprintf(txt_bet, "Your team placed a %d bet", bet);
+  }
+  else
+  {
+    sprintf(txt_bet, "The other team placed a %d bet", bet);
+  }
+
+  switch(players[team_bet_id].trump)
+  {
+    case 'D'  :
+      sprintf(txt_trump, "This round is played with Diamond trump");
+
+    case 'C'  :
+      sprintf(txt_trump, "This round is played with Club trump");
+
+    case 'H'  :
+      sprintf(txt_trump, "This round is played with Heart trump");
+
+    case 'S'  :
+      sprintf(txt_trump, "This round is played with Spade trump");
+
+    case 'N'  :
+      sprintf(txt_trump, "This round is played with No trump");
+
+    case 'A'  :
+      sprintf(txt_trump, "This round is played with All trump");
+ }
+
+  //Render the txts on the sprites
+  spr_bet.bmp = TTF_RenderText_Solid(font, txt_bet, lightBrown);
+  checkError(spr_bet.bmp);
+
+  spr_trump.bmp = TTF_RenderText_Solid(font, txt_trump, lightBrown);
+  checkError(spr_trump.bmp);
+
+  spr_space.bmp = TTF_RenderText_Solid(font, txt_space, lightBrown);
+  checkError(spr_space.bmp);
+
+  //We Blit
+  SDL_BlitSurface(background,NULL,screen,NULL);
+  SDL_BlitSurface(spr_bet.bmp,NULL,screen, &spr_bet.rect);
+  SDL_BlitSurface(spr_trump.bmp,NULL,screen, &spr_trump.rect);
+  SDL_BlitSurface(spr_space.bmp,NULL,screen, &spr_space.rect);
+
+  SDL_Flip(screen);
+
+  SDL_Event event;
+  int exit_loop = 0;
+  while (exit_loop!=1)
+  {
+    SDL_WaitEvent(&event);
+    if (event.key.keysym.sym==SDLK_SPACE)
+    {
+          exit_loop++;
+    }
+  }
+
+  //we free
+  SDL_FreeSurface(spr_bet.bmp);
+  SDL_FreeSurface(spr_trump.bmp);
+  SDL_FreeSurface(spr_space.bmp);
   TTF_CloseFont(font);
 }

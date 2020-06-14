@@ -2,6 +2,7 @@
 #define GRAPHICGAME_H_INCLUDED
 #include <SDL/SDL.h>
 #include "game/variableManagement.h"
+#include "game/game.h"
 
 ///All the following function ask for the screen surface and/or the background///
 
@@ -34,5 +35,9 @@ void displayScores(SDL_Surface *screen, SDL_Surface *background, int score1, int
 //Quits to the main menu when the user hits the space key
 void displayGameOver(SDL_Surface *screen, SDL_Surface *background, int win);
 
+//Need the player's informations to know what are the results of the passes
+//Displays the bet placed, trump color (or all or no trump)
+//Quits to the main menu when the user hits the space key
+void displayPassesResult(SDL_Surface *screen, SDL_Surface *background, Player_t players[]);
 
 #endif // GRAPHICGAME_H_INCLUDED

@@ -68,7 +68,7 @@ void startRound(Player_t * player_and_AI, Card_t all_player_and_AI_cards[4][8], 
   - trump : the trump of the round
 
   This function returns a boolean if the player can player the selected card or not*/
-int canPlayCard(Card_t first_card, int first_id, Card_t player_card, int player_id, Card_t * player_hand, int hand_length, int max_card_value, char trump)
+int canPlayCard(Card_t first_card, int first_id, Card_t player_card, int player_id, Card_t *player_hand, int hand_length, int max_card_value, char trump);
 
 
 /*Function that shift the array containing player and AIs and sets the corresponding index first
