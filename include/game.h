@@ -15,7 +15,7 @@ typedef struct {
 
 int gameLoop();//game loop
 
-char startPasses(Card_t * deck_of_32_cards, Card_t all_player_and_AI_cards[4][8], Player_t * player_and_AI); //function that start the passes and return the trump color
+char startPasses(Card_t all_player_and_AI_cards[4][8], Player_t * player_and_AI); //function that start the passes and return the trump color
 
 void startRound(Player_t * player_and_AI, Card_t all_player_and_AI_cards[4][8], char trump); //start a round with 8 tricks
 
